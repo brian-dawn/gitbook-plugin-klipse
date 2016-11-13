@@ -12,8 +12,6 @@ module.exports = {
     }; \
 </script> \
 <script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js"></script>'
-        page.content = page.content.replace("<b>", "<strong>")
-            .replace("</b>", "</strong>");
         return page;
     }
     },
