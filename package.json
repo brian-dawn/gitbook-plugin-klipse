@@ -1,6 +1,6 @@
 {
   "name": "gitbook-plugin-klipse",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A klipse plugin for gitbook",
   "main": "index.js",
   "scripts": {
