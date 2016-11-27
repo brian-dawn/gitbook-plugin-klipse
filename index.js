@@ -14,7 +14,7 @@ module.exports = {
         selector_eval_php: '.lang-eval-php', \
         selector_eval_scheme: '.lang-scheme', \
         selector_eval_ruby: '.lang-eval-ruby', \
-        selector_js: '.lang-transpile-clojure'\
+        selector_js: '.lang-transpile-cljs'\
     }; \
 </script> \
 <script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js"></script>'
