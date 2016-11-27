@@ -8,7 +8,13 @@ module.exports = {
       href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css"> \
 <script> \
     window.klipse_settings = { \
-        selector: \'.language-klipse\' \
+        selector: \'.language-klipse\, .lang-eval-clojure', \
+        selector_eval_js: '.lang-eval-js', \
+        selector_eval_python_client: '.lang-eval-python', \
+        selector_eval_php: '.lang-eval-php', \
+        selector_eval_scheme: '.lang-scheme', \
+        selector_eval_ruby: '.lang-eval-ruby', \
+        selector_js: '.lang-transpile-cljs'\
     }; \
 </script> \
 <script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js"></script>'
