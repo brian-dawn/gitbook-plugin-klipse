@@ -3,14 +3,65 @@
 This plugin allows you to embed klipse: https://github.com/viebel/klipse
 in gitbook projects.
 
+Klipse allow code snippets to be live and interactive. The code is evaluated as you type or when you press `Ctrl-Enter`,
+
 To enable this plugin add `klipse` to your `book.json` plugins.
 
-Now you can embed runnable ClojureScript in your gitbooks like:
+Now you can embed interactive code snippets (clojure, javascript, python, ruby, scheme and php) in your gitbooks:
 
-```html
-<pre>
-  <code class="language-klipse">
-    (map inc [1 2 3])
-  </code>
-</pre>
-```
+# Clojure & ClojureScript
+
+For clojure[script] code evaluation:
+
+<pre><code>
+&grave;&grave;&grave;eval-clojure
+(map inc [1 2 3])
+&grave;&grave;&grave;
+</code></pre>
+
+For clojurescript code transpilation:
+
+<pre><code>
+&grave;&grave;&grave;transpile-cljs
+(map inc [1 2 3])
+&grave;&grave;&grave;
+</code></pre>
+
+# Javascript
+
+<pre><code>
+&grave;&grave;&grave;eval-js
+[1,2,3].map(function(x) { return x + 1;})
+&grave;&grave;&grave;
+</code></pre>
+
+# Python
+
+<pre><code>
+&grave;&grave;&grave;eval-python
+print [x + 1 for x in range(10)]
+&grave;&grave;&grave;
+</code></pre>
+
+# PHP
+
+
+<pre><code>
+&grave;&grave;&grave;eval-php
+$var = ["a" => 1];
+var_dump($var);
+&grave;&grave;&grave;
+</code></pre>
+
+# Scheme 
+
+<pre><code>
+&grave;&grave;&grave;eval-php
+$var = ["a" => 1];
+var_dump($var);
+&grave;&grave;&grave;
+</code></pre>
+
+        selector_eval_scheme: '.lang-scheme', \
+        selector_eval_ruby: '.lang-eval-ruby', \
+        selector_js: '.lang-transpile-cljs'\
