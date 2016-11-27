@@ -43,25 +43,32 @@ print [x + 1 for x in range(10)]
 &grave;&grave;&grave;
 </code></pre>
 
-# PHP
 
-
+# Ruby
 <pre><code>
-&grave;&grave;&grave;eval-php
-$var = ["a" => 1];
-var_dump($var);
+&grave;&grave;&grave;eval-ruby
+[1,2]*10
 &grave;&grave;&grave;
 </code></pre>
 
 # Scheme 
 
 <pre><code>
+&grave;&grave;&grave;eval-scheme
+(let ((x 23)
+      (y 42))
+  (+ x y))
+&grave;&grave;&grave;
+</code></pre>
+
+
+# PHP
+
+<pre><code>
 &grave;&grave;&grave;eval-php
 $var = ["a" => 1];
 var_dump($var);
 &grave;&grave;&grave;
 </code></pre>
 
-        selector_eval_scheme: '.lang-scheme', \
-        selector_eval_ruby: '.lang-eval-ruby', \
-        selector_js: '.lang-transpile-cljs'\
+
