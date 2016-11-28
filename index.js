@@ -8,7 +8,7 @@ module.exports = {
       href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css"> \
 <script> \
     window.klipse_settings = { \
-        selector: \'.language-klipse\, .lang-eval-clojure', \
+        selector: \'.language-klipse, .lang-eval-clojure', \
         selector_eval_js: '.lang-eval-js', \
         selector_eval_python_client: '.lang-eval-python', \
         selector_eval_php: '.lang-eval-php', \
