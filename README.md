@@ -3,7 +3,7 @@
 This plugin allows you to embed klipse: https://github.com/viebel/klipse
 in gitbook projects.
 
-Klipse allows code snippets in your gitbooks to be live and interactive. The code is evaluated as you type or when you press `Ctrl-Enter`,
+Klipse allows code snippets in your gitbooks to be live and interactive. The code is evaluated as you type or when you press `Ctrl-Enter`.
 
 To enable this plugin add `klipse` to your `book.json` plugins.
 
