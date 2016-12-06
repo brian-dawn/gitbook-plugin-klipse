@@ -7,7 +7,9 @@ Klipse allows code snippets in your gitbooks to be live and interactive. The cod
 
 To enable this plugin add `klipse` to your `book.json` plugins.
 
-Now you can embed interactive code snippets (clojure, javascript, python, ruby, scheme and php) in your gitbooks:
+Now you can embed interactive code snippets (clojure, javascript, python, ruby, scheme and php) in your gitbooks.
+
+You can read [the full interactive guide](https://book.klipse.tech/) for using klipse in a gitbook. The guide is itself a gitbook using the klipse plugin.
 
 # Clojure & ClojureScript
 
