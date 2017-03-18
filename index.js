@@ -14,6 +14,17 @@ module.exports = {
         selector_eval_php: ".lang-eval-php", \
         selector_eval_scheme: ".lang-eval-scheme", \
         selector_eval_ruby: ".lang-eval-ruby", \
+        selector_reagent: ".lang-reagent",\
+        selector_google_charts: ".lang-google-chart",\
+        selector_es2017: ".lang-eval-es2017",\
+        selector_jsx: ".lang-eval-jsx",\
+        selector_transpile_jsx: ".lang-transpile-jsx",\
+        selector_eval_markdown: ".lang-render-markdown",\
+        selector_eval_lambdaway: ".lang-render-lambdaway",\
+        selector_eval_cpp: ".lang-eval-cpp",\
+        selector_eval_html: ".lang-render-html",\
+        selector_sql: ".lang-eval-sql",\
+        selector_brainfuck: "lang-eval-brainfuck",\
         selector_js: ".lang-transpile-cljs"\
     }; \
 </script> \
