@@ -19,6 +19,8 @@ module.exports = {
         selector_es2017: ".lang-eval-es2017",\
         selector_jsx: ".lang-eval-jsx",\
         selector_transpile_jsx: ".lang-transpile-jsx",\
+        selector_render_jsx: ".lang-render-jsx",\
+        selector_react: ".lang-react",\
         selector_eval_markdown: ".lang-render-markdown",\
         selector_eval_lambdaway: ".lang-render-lambdaway",\
         selector_eval_cpp: ".lang-eval-cpp",\
