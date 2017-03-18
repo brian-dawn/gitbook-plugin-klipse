@@ -1,6 +1,6 @@
 {
   "name": "gitbook-plugin-klipse",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A klipse plugin for gitbook",
   "main": "index.js",
   "scripts": {
@@ -17,15 +17,15 @@
   },
   "homepage": "https://github.com/brian-dawn/gitbook-plugin-klipse#readme",
   "engines": {
-     "gitbook": ">1.x.x"
+    "gitbook": ">1.x.x"
   },
   "gitbook": {
-      "properties": {
-          "myConfigKey": {
-              "type": "string",
-              "default": "it's the default value",
-              "description": "It defines my awesome config!"
-          }
+    "properties": {
+      "myConfigKey": {
+        "type": "string",
+        "default": "it's the default value",
+        "description": "It defines my awesome config!"
       }
+    }
   }
 }
