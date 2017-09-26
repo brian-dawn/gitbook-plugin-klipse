@@ -1,3 +1,7 @@
+var toCamelCase = function(s) {
+    return s.replace(/-([a-z])/g, function (g) { return g[1].toUpperCase(); });
+}
+
 module.exports = {
     // Map of hooks
     hooks: {
@@ -36,7 +40,49 @@ module.exports = {
     },
 
     // Map of new blocks
-    blocks: {},
+    blocks: {
+        klipse: {
+            process: function(block) {
+                var lang = block.kwargs.lang || block.args[0];
+                var langClass = ' class="lang-' + lang + '"';
+
+                var hidden = block.kwargs.hidden ? ' class="hidden"' : '';
+                var pre = '<pre' + hidden + '>';
+
+                var opts = [
+                    // All snippets
+                    'eval-idle-msec',
+                    'loop-msec',
+                    'preamble',
+                    'gist-id',
+                    // Javascript and Clojure only
+                    'external-libs',
+                    // Javascript only
+                    'async-code',
+                    // Clojure only
+                    'static-fns',
+                    'print-length',
+                    'beautify-strings',
+                    'verbose',
+                    'max-eval-duration',
+                    'compile-display-guard'
+                ].reduce(function(a, c) {
+                    var camelCased = toCamelCase(c);
+                    if (block.kwargs.hasOwnProperty(camelCased)) {
+                        return a + ' data-' + c + '="' + block.kwargs[camelCased] + '"';
+                    }
+                    return a;
+                }, '');
+
+                var code = '<code'
+                    + langClass
+                    + opts
+                    + '>' + block.body + '</code>'
+
+                return pre + code + '</pre>';
+            }
+        }
+    },
 
     // Map of new filters
     filters: {}
