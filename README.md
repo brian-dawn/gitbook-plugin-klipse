@@ -45,7 +45,6 @@ print [x + 1 for x in range(10)]
 &grave;&grave;&grave;
 </code></pre>
 
-
 # Ruby
 <pre><code>
 &grave;&grave;&grave;eval-ruby
@@ -63,7 +62,6 @@ print [x + 1 for x in range(10)]
 &grave;&grave;&grave;
 </code></pre>
 
-
 # PHP
 
 <pre><code>
@@ -73,4 +71,22 @@ var_dump($var);
 &grave;&grave;&grave;
 </code></pre>
 
+# Using options
 
+You can define snippet level configuration by using gitbook blocks instead of code fences. The first argument is always the language, followed by named arguments for all other configuration options. All option names are camelCased.
+
+## Clojure & ClojureScript
+
+```
+{% klipse "eval-clojure", loopMsec="1000" %}
+(rand)
+{% klipseend %}
+```
+
+## Javascript
+
+```
+{% klipse "eval-js", loopMsec="1000" %}
+new Date()
+{% klipseend %}
+```
