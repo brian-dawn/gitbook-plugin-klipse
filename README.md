@@ -80,7 +80,7 @@ You can define snippet level configuration by using gitbook blocks instead of co
 ```
 {% klipse "eval-clojure", loopMsec="1000" %}
 (rand)
-{% klipseend %}
+{% endklipse %}
 ```
 
 ## Javascript
@@ -88,5 +88,5 @@ You can define snippet level configuration by using gitbook blocks instead of co
 ```
 {% klipse "eval-js", loopMsec="1000" %}
 new Date()
-{% klipseend %}
+{% endklipse %}
 ```
